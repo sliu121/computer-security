@@ -1,0 +1,17 @@
+### Homework made by:
+		Siyu Liu  			email:sliu121@binghamton.edu
+		Hanliang Jiang			email:hjiang38@binghamton.edu
+
+### Our codes had been tested on the bingsuns.
+
+
+### How to execute our codes:
+	Part1:
+		1. make
+		2. ./telnetser 
+		3. ./telnetcli 127.0.0.1 or bingsuns.binghamton.edu
+		...
+
+	Part2:
+		1. make
+		2. ./mono <inputfile> <outpufile> <seed> 1/0
