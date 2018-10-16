@@ -1,0 +1,47 @@
+1. Siyu Liu sliu121@binghamton.edu
+
+2. JAVA
+
+3. Linux
+
+
+4. -make : it will generate all class file in each file
+   -java Vf 8000: run server
+   -java voter_cli 127.0.0.1 8000: run client
+   -clean: remove all *.class file in each file 
+
+
+5.
+
+	En:
+	SealedObject encrypt(Key key,String plain_text) throws InvalidKeyException, IOException, IllegalBlockSizeException 
+	{
+        	this.cipher.init(Cipher.ENCRYPT_MODE,key);
+        	SealedObject zipbag = new SealedObject(plain_text,this.cipher);
+        	return  zipbag;
+    	}
+
+
+	DE:  
+
+	Object decrypt(Key key, SealedObject encrypted) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, ClassNotFoundException, BadPaddingException, IllegalBlockSizeException, IOException 
+	{
+	        Cipher c = Cipher.getInstance("RSA");
+	        c.init(Cipher.DECRYPT_MODE, key);
+	        return encrypted.getObject(c);
+	}
+
+6. 
+	    public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
+        int portNumber = -1;
+        portNumber = Integer.parseInt(args[0]);
+        ServerSocket serverSocket = new ServerSocket(portNumber);
+
+        Socket socket = null;
+        while(true) {
+        socket = serverSocket.accept();
+        socket.setSoTimeout(4000000);
+        Thread thread = new Thread(new mul_ser(socket));
+        thread.start();
+        }
+    }
