@@ -1,9 +1,0 @@
-1. OSI协议层中多出来的　presentation-layer and session-layer 的功能是什么 ？
-2. inet_pton 具体作用是什么？
-
-
-1. Public-key authority 的缺点到底是什么？是因为多个步骤导致时间夯余？
-2. 在 Certificates Authority中，Ca 里面包含了IDa 这个是不是SIG的体现？不是吧，因为把ID存进去可以让接收方知道发件人是谁，方便证书的存储和管理。
-3. PGP的key ID到底是怎么工作的。
-4. buffer overflow 为什么等于0？
-5. buffer overflow attack 如何实现的？
