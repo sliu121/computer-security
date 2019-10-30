@@ -19,13 +19,13 @@ program should also check whether the ID is already in the file. If so, your pro
 ID already exists”`.
 
 ## How to use
-* **The SSL server is :** 
+* **The SSL server is invoked as :** 
 
 	`sslserv <server_port>` 
 
 	*`<server_port>` specifies the port number on which the server listens for the connection.*
 
-* **The SSL client is :** 
+* **The SSL client is invoked as:** 
 
 	`sslcli <server_domain> <server_port>` 
 
